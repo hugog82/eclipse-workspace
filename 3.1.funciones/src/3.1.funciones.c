@@ -12,6 +12,24 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	setbuf(stdout, NULL);
+
+
+
+
+
+
 	return EXIT_SUCCESS;
+}
+
+int mostrarNumeroPorPantalla (float * numero)
+{
+	int retorno = 0;
+
+
+
+
+
+
+	return retorno;
 }
