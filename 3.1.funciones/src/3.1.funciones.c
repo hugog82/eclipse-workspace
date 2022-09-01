@@ -22,14 +22,11 @@ int main(void) {
 	return EXIT_SUCCESS;
 }
 
-int mostrarNumeroPorPantalla (float * numero)
+int mostrarNumeroPorPantalla (float mostrarNumero)
 {
-	int retorno = 0;
+	float mostrarNumero;
+
+	printf("%f,", mostrarNumero);
 
 
-
-
-
-
-	return retorno;
 }
