@@ -1,8 +1,7 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio_ext.h>
+#include "calculos.h"
+
 
 int sumarDosEnteros(int primerNumero, int segundoNumero);
 int dividirDosEnteros(int primerNumero, int segundoNumero, int * resultadoDivision);
@@ -22,12 +21,11 @@ int main(void) {
 	retornoScanf = scanf("%d", &numeroUno);
 	while (retornoScanf != 1) {
 		printf("Le pifiaste al tipo\n");
-		__fpurge(stdin);
+		setbuf(stdout, NULL);
 		printf("Ingrese el numero: ");
 		retornoScanf = scanf("%d", &numeroUno);
 	}
-	__fpurge(stdin);
-	//fflush(stdin) SOLO WINDOWS
+	setbuf(stdout, NULL);
 	printf("Ingrese el operador (+/-): ");
 	retornoScanf = scanf("%c", &operador);
 
@@ -60,31 +58,3 @@ int main(void) {
 
 	return 0;
 }
-
-int sumarDosEnteros(int primerNumero, int segundoNumero) {
-	int suma;
-
-	suma = primerNumero + segundoNumero;
-
-	return suma;
-}
-
-int dividirDosEnteros(int a, int b, int * pepe) {
-	int retorno = 0;
-
-	if (a > 100) {
-		retorno = -2;
-	}
-
-	if (b != 0) {
-
-		*pepe = a / b;
-		//operador de indireccion
-	} else {
-		retorno = -1;
-	}
-
-	return retorno;
-}
-
-

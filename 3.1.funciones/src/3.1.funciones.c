@@ -24,6 +24,7 @@ int main(void) {
 
 int mostrarNumeroPorPantalla (float mostrarNumero)
 {
+
 	float mostrarNumero;
 
 	printf("%f,", mostrarNumero);
