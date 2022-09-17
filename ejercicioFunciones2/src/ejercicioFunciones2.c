@@ -50,7 +50,7 @@ int main()
     printf("Contenido de pNumero\n");
     printf("Valor de pNumero: %d\n\n", *pNumero); //accedo al valor que guarda la direccion de ememoria a la que apunta pNumero
 
-    pNumero = &otroNumero; //le la dir de memoria a la que apunta
+    pNumero = &otroNumero; //lee la dir de memoria a la que apunta
     printf("Contenido de pNumero\n");
     printf("Valor de pNumero: %d\n\n", *pNumero); //accedo al valor que guarda la direccion de ememoria a la que apunta pNumero
 

@@ -113,4 +113,5 @@
 			<resource resourceType="PROJECT" workspacePath="/ejercicio"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
